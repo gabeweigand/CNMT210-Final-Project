@@ -1,0 +1,142 @@
+/*  CSS file  */
+/* Title  Final Project Shared Style Sheet
+  @author: Gabriel Weigand
+  creation date: 12/13/18
+  modified date: 12/17/18
+	*/
+
+html, body, main, header, footer, div, 
+nav, a, img, span, h1, h2, p, iframe, figure {
+	margin: 0;
+	padding: 0;
+	border: none;
+}	/* reset */
+
+
+		/* header, footer, & logo styles */
+#header, #footer {
+	width: 100%;
+	margin: auto;
+    padding: 30px 0 30px 0;
+	text-align: center;
+	font-weight: bold;
+	font-size: 18pt;
+}	/* header & footer spacing, alignment, & font styles */
+.logo {
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	width: 125px;
+	padding: 10px;
+}	/* page logo styles */
+
+
+		/* navigation sidebar & button styles */
+#navButton {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	padding: 1% 0 0 1%;
+	width: 100px;
+	transition: 0.5s ease-in-out;
+}	/* nav button styles */
+#navContainer {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(50,50,50,0.98);
+    overflow-x: hidden;
+    padding-top: 60px;
+	transition: 0.5s ease-in-out;
+}	/* nav sidebar styles */
+#navButton:hover{
+	width: 105px;
+}	/* nav button hover style */
+#navContainer a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+	font-size: 16pt;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}	/* nav link styles */
+#navContainer a:hover {
+    color: #fffcfc;
+	text-shadow:  0.1em 0.1em 0.2em white;
+}	/* nav link styles */
+#closeButton {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 50px;
+	font-weight: bold;
+    margin-left: 50px;
+}	/* nav close button styles */
+
+
+		/* main page content styles */
+#pageContainer {
+    transition: margin-left .5s;
+}	/* page spacing transition style */
+#mainContent {
+	display: flex;
+	flex-flow: row wrap;
+	overflow: hidden;
+    margin: 0 10% 0 10%;
+	padding: 5%;
+	justify-content: center;
+}	/* flexbox container for main content */
+.mainText {
+	font-size: 1.3em;
+}	/* font size style */
+iframe {
+	flex: 0 1 auto;
+	padding: 20px;
+}	/* embeded viedo styles */
+
+
+		/* slideshow styles */
+#slider {
+	overflow: hidden;
+	width: 1000px;
+	padding-bottom: 20px;
+}	/* slideshow container styles */
+#slide {
+	position: relative;
+	width: 1000%;
+	margin: 0;
+	left: 0;
+	transition: left .5s ease-in-out;
+}	/* slideshow figure styles */
+#slide img {
+	width: 10%;
+	float: left;
+}	/* slideshow figure image's styles */
+.slideInterface {
+	position: relative;
+	bottom: 22px;
+	padding: 0 2px 0 2px;
+    background-color: rgba(50,50,50,0.98);
+	font-size: 15pt;
+	color: white;
+	text-decoration: none;
+}	/* slideshow button & slide tracker styles */
+#slider a {
+    transition: 0.3s;
+}	/* slideshow buttons transition style */
+#slider a:hover {
+	text-shadow:  0.1em 0.1em 0.2em white;
+}	/* slideshow buttons transition style */
+#nextButton {
+	float: right;
+	bottom: 23px;
+}	/* slideshow next button styles */
+#slider p {
+	display: inline-block;
+	top: -50px;
+	left: -93px;
+}	/* slideshow previous button styles */
+

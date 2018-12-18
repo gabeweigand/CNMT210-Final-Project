@@ -1,0 +1,71 @@
+/*  CSS file  */
+/* Title  Final Project Contact Me Style Sheet
+  @author: Gabriel Weigand
+  creation date: 11/26/18
+  modified date: 12/17/18
+	*/
+
+form, label, input {
+	margin: 0;
+	padding: 0;
+}	/* reset */
+
+html { 
+  background: linear-gradient(to bottom right, forestgreen, white, forestgreen, white) no-repeat center center fixed; 
+  background-size: cover;
+}	/* page background styles */
+
+.logo {
+	transition: width .5s ease-out;
+}	/* page logo transition style */
+.logo:hover {
+	width: 135px;
+}	/* page logo hover style */
+
+
+		/* main page content styles */
+#msg {
+	padding: 0 50px 0 50px;
+	font-size: 1.5em;
+	text-align: center;
+}	/* opening message styles */
+#contactForm {
+	width: 100%;
+}	/* form spacing */
+.fieldset {
+	width: 100%;
+	min-width: 380px;
+	margin-top: 2%;
+	padding-top: 2%;
+}	/* form layout & spacing */
+p, legend {
+	font-size: 1.3em;
+	font-weight: bold;
+}	/* font size & weight styles */
+#question, .label {
+	display: inline-block;
+}	/* form layout and spacing */
+.label {
+	width: 155px;
+	margin-left: 12%;
+	padding-bottom: 30px;
+	vertical-align: top;
+}	/* input fields and labels layout styles */
+
+
+		/* button styles */
+#button {
+	text-align: right;
+	margin-right: 12%;
+	font-size: 1.0em;
+} /* button spacing & font size styles */
+#button input {
+	font-size: 1.7em;
+	width: 120px;
+	border: 2px solid black;
+    border-radius: 5px;
+}	/* button styles */
+span{
+	padding-left: 4%;
+}	/* special button spacing style */
+

@@ -1,0 +1,29 @@
+/*  CSS file  */
+/* Title  Final Project Forza: Horizon 4 Style Sheet
+  @author: Gabriel Weigand
+  creation date: 11/19/18
+  modified date: 12/17/18
+	*/
+
+html {
+	background: url("../images/forza/forza_background.jpg") no-repeat center center fixed;
+	background-size: cover;
+}	/* page background image styles */
+
+.logo {
+	transition: width .5s ease-out;
+}	/* page logo transition style */
+.logo:hover {
+	width: 135px;
+}	/* page logo hover style */
+
+h1{
+	color: orange;
+}	/* font color style */
+
+#mainContent {
+	background-color: lightgreen;
+	border: 8px dashed yellow;
+	border-radius: 15%;
+}	/* main content flexbox container styles */
+

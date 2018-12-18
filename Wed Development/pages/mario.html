@@ -1,0 +1,90 @@
+<!-- HTML file -->
+<!--Title  Final Project Super Mario Odyssey Page
+  @author: Gabriel Weigand
+  creation date: 11/19/18
+  modified date: 12/17/18
+  	-->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Gabe's Top 3 Games: Super Mario Odyssey</title>	<!-- page title -->
+		<link rel="stylesheet" href="../common/shared_styles.css">
+		<link rel="stylesheet" href="../css/mario_styles.css">
+		<script src="../common/shared_script.js"></script>
+	</head>		<!-- links for shared styles, unique styles, & shared script files -->
+	
+	<body>
+		<nav id="navContainer">		<!-- navagation slidebar -->
+			<a href="javascript:void(0)" id="closeButton" onclick="closeNav()">&times;</a>
+			<a href="../index.html" title="Go Home">Home</a>
+			<a href="../pages/forza.html" title="Go to Forza: Horizon 4 page">Forza: Horizon 4</a>
+			<a href="../pages/god_of_war.html" title="Go to God of War page">God of War</a>
+			<a href="../pages/about_me.html" title="Go to About Me page">About Me</a>
+			<a href="../pages/contact_me.html" title="Go to Contact Me page">Contact Me</a>
+		</nav>		<!-- navagation includes page links & close button -->
+		
+		<div id="pageContainer">	<!-- page container -->
+			<header id="header">
+				<a href="javascript:void(0)" onclick="navControl()" title="Site Navigation">
+					<img src="../images/mario/cappy.jpg" alt="sorry image missing" id="navButton">
+				</a>	<!-- nav button -->
+				
+				<a href="../index.html" title="Go Home">
+					<img src="../images/logo.png" alt="sorry image missing" class="logo">
+				</a>	<!-- logo and home button -->
+				
+				<h1>Super Mario Odyssey</h1>
+			</header>	<!-- header with navigation button, site logo, & page title -->
+			
+			<main id="mainContent">		<!-- main content container -->
+				<div id="slider">	<!-- slideshow container -->
+					<figure id="slide">
+						<img src="../images/mario/mario_background.jpg" alt="sorry image missing">
+						<img src="../images/mario/mario_slide2.jpg" alt="sorry image missing">
+						<img src="../images/mario/mario_slide3.jpg" alt="sorry image missing">
+						<img src="../images/mario/mario_slide4.jpg" alt="sorry image missing">
+						<img src="../images/mario/mario_slide5.jpg" alt="sorry image missing">
+						<img src="../images/mario/mario_slide6.jpg" alt="sorry image missing">
+						<img src="../images/mario/mario_slide7.jpg" alt="sorry image missing">
+						<img src="../images/mario/mario_slide8.png" alt="sorry image missing">
+						<img src="../images/mario/mario_slide9.png" alt="sorry image missing">
+						<img src="../images/mario/mario_slide10.png" alt="sorry image missing">
+					</figure>	<!-- figure contains all images in slideshow -->
+					
+					<a href="javascript:void(0)" class="slideInterface" onclick="lastSlide()">&laquo; Previous</a>
+					<p class="slideInterface" id="slide#">1/10</p>
+					<a href="javascript:void(0)" class="slideInterface" id="nextButton" onclick="nextSlide()">Next &raquo;</a>
+				</div>	<!-- slideshow container includes previous & next buttons & current slide tracker -->
+				
+				<p class="mainText">This game was released on October 27, 2017 and it was one of the most talked about games of that year. 
+				The Nintendo Switch system had found a game that made having the system almost a necessity. In this Mario 
+				game the players had a lot to do, not only did you get to save Princess Peach from Bowser (again) but you 
+				also had the challenge of finding moons in order to unlock new levels, and you got to control a ton of 
+				cool and impressive new features. One of the best features of this game was Mario’s companion “Cappy”. 
+				Mario uses Cappy to do some impressive new moves including a very long jump so that Mario can reach places 
+				he never could on his own before!<br><br>Listed below were some of my favorite highlights of the game:</p>
+					<!-- main text content -->
+				<ul class="mainText">
+					<li>The number of levels in this game kept me engrossed in this game and made it hard to put down<br></li>
+					<li>Searching to find every moon was not only captivating but also challenging. Each level had 
+					specially hidden moons that made me think and strategize. So, it was nice to not only feel happy 
+					when playing it but that I was also getting a challenge.<br></li>
+					<li>One other thing that made this game fun was all of the other characters that we as players could 
+					control. On one level we could control a T-Rex on another level we can control our enemies and use them 
+					to progress through levels. This was interesting because you can see the creativity of developers and 
+					it always made me laugh whenever I possessed a character that had cool powers and abilities.</li>
+				</ul>	<!-- unordered list -->
+					<!-- iframe contains embeded youtube video -->
+				<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/MgR9XBBEKjI" 
+				allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</main>		<!-- end of main content -->
+		</div>		<!-- end of page contentainer -->
+		
+		<footer id="footer">	<!-- page footer -->
+			<p>2018 - Site Designer: Gabe Weigand - Strickly for Academic Purposes</p>
+		</footer>
+	</body>
+</html>
+

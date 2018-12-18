@@ -1,0 +1,107 @@
+<!-- HTML file -->
+<!--Title  Final Project God of War Page
+  @author: Gabriel Weigand
+  creation date: 11/19/18
+  modified date: 12/17/18
+  	-->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Gabe's Top 3 Games: God of War</title>	<!-- page title -->
+		<link rel="stylesheet" href="../common/shared_styles.css">
+		<link rel="stylesheet" href="../css/god_of_war_styles.css">
+		<script src="../common/shared_script.js"></script>
+	</head>		<!-- links for shared styles, unique styles, & shared script files -->
+	
+	<body>
+		<nav id="navContainer">		<!-- navagation slidebar -->
+			<a href="javascript:void(0)" id="closeButton" onclick="closeNav()">&times;</a>
+			<a href="../index.html" title="Go Home">Home</a>
+			<a href="../pages/mario.html" title="Go to Super Mario Odyssey page">Super Mario Odyssey</a>
+			<a href="../pages/forza.html" title="Go to Forza: Horizon 4 page">Forza: Horizon 4</a>
+			<a href="../pages/about_me.html" title="Go to About Me page">About Me</a>
+			<a href="../pages/contact_me.html" title="Go to Contact Me page">Contact Me</a>
+		</nav>		<!-- navagation includes page links & close button -->
+		
+		<div id="pageContainer">	<!-- page container -->
+			<header id="header">
+				<a href="javascript:void(0)" onclick="navControl()" title="Site Navigation">
+					<img src="../images/god_of_war/axe.png" alt="sorry image missing" id="navButton">
+				</a>	<!-- nav button -->
+				
+				<a href="../index.html" title="Go Home">
+					<img src="../images/logo.png" alt="sorry image missing" class="logo">
+				</a>	<!-- logo and home button -->
+				
+				<h1>God of War</h1>
+			</header>	<!-- header with navigation button, site logo, & page title -->
+			
+			<main id="mainContent">		<!-- main content container -->
+				<div id="slider">	<!-- slideshow container -->
+					<figure id="slide">
+						<img src="../images/god_of_war/god_of_war_background.jpg" alt="sorry image missing">
+						<img src="../images/god_of_war/gow_slide2.jpg" alt="sorry image missing">
+						<img src="../images/god_of_war/gow_slide3.jpg" alt="sorry image missing">
+						<img src="../images/god_of_war/gow_slide4.jpg" alt="sorry image missing">
+						<img src="../images/god_of_war/gow_slide5.jpg" alt="sorry image missing">
+						<img src="../images/god_of_war/gow_slide6.jpg" alt="sorry image missing">
+						<img src="../images/god_of_war/gow_slide7.jpg" alt="sorry image missing">
+						<img src="../images/god_of_war/gow_slide8.jpg" alt="sorry image missing">
+						<img src="../images/god_of_war/gow_slide9.jpg" alt="sorry image missing">
+						<img src="../images/god_of_war/gow_slide10.png" alt="sorry image missing">
+					</figure>	<!-- figure contains all images in slideshow -->
+					
+					<a href="javascript:void(0)" class="slideInterface" onclick="lastSlide()">&laquo; Previous</a>
+					<p class="slideInterface" id="slide#">1/10</p>
+					<a href="javascript:void(0)" class="slideInterface" id="nextButton" onclick="nextSlide()">Next &raquo;</a>
+				</div>	<!-- slideshow container includes previous & next buttons & current slide tracker -->
+			
+				<p class="mainText">God of War was released April 20, 2018. This was one of the best storyline-based games I have 
+				played in a long time. It has everything I have wanted in a game. It had adventure, the characters 
+				were unique and not repetitive, the voice acting was terrific, the detail and design in everything 
+				from the buildings to the birds was gorgeous, and the weapons available were powerful and fun to use. 
+				The game follows to main characters Kratos and Atreus on the hunt to find a resting place for 
+				Atreus’s mother. Throughout this entire game I had a blast. It had amazing enemy battles for all 
+				skill levels including the advanced. The best enemy battles were the Valkyries- it was challenging 
+				but engaging. It had wonderful character development as young Atreus becomes more of a man throughout 
+				his entire journey. This game had puzzles and skill rooms where you had to figure out how to progress 
+				forward. I would recommend this game to absolutely anyone, even if you are not a gamer it is 
+				enjoyable to sit and watch the cut scenes and listen to the story because it is well done.<br><br>
+				Listed below are some of the things I loved most about this masterpiece:</p>
+					<!-- main text content -->
+				<ul class="mainText">
+					<li>The plot between the two characters and how it develops and strengthens the bond between 
+					father and son. Most storyline-based games can be predictable, but I could never guess where a 
+					cut scene was going or what I was going to do next. It felt good to be pleasantly taken aback on 
+					where the story wanted us to go.<br></li>
+					<li>The combat in the game was incredible. It felt nice not to have a gun or a knife or a bow as 
+					my main weapons of choice. The best weapon in this game was Kratos’s Blades of Chaos. Not only 
+					was it fun to whip the blades around but you could do impressive spin attacks that can annihilate 
+					herds of enemies at one time. Another fun combat feature was Kratos’s anger meter. When Kratos 
+					builds up enough anger you can use this during an attack to elicit the most damage to your opponent. 
+					These combat features are great especially if you are new to the video game scene and if you aren’t 
+					then bump up your difficulty and get ready for the battle of your life.<br></li>
+					<li>And finally, the most impressive part of this game was the details. The characters didn’t look 
+					generic you could see the actual facial expressions on their faces and the wrinkles and smiles 
+					throughout the entire game. The World Serpent was by far my favorite. The details in his scales and 
+					teeth were absolute amazing. This game just looks smooth. Not only did the characters look stunning 
+					but so did the scenery. This game has a fast travel option through wooden doors. When you enter the 
+					fast travel door, it is like you are transported this this beautiful place surrounded by color. As 
+					you enter you feel at peace and once you start walking around in there you almost don’t want to exit 
+					to your location because it just looks amazing. This game’s details were well thought out and excellent. 
+					If you like combat, adventure, action, or an amazing story then this is the game for you!</li>
+				</ul>	<!-- unordered list -->
+					<!-- iframe contains embeded youtube video -->
+				<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/x_MtcOznfM4" 
+				allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</main>		<!-- end of main content -->
+		</div>		<!-- end of page contentainer -->
+		
+		<footer id="footer">	<!-- page footer -->
+			<p>2018 - Site Designer: Gabe Weigand - Strickly for Academic Purposes</p>
+		</footer>
+	</body>
+</html>
+

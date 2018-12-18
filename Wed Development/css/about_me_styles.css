@@ -1,0 +1,23 @@
+/*  CSS file  */
+/* Title  Final Project About Me Style Sheet
+  @author: Gabriel Weigand
+  creation date: 12/13/18
+  modified date: 12/17/18
+	*/
+
+html { 
+  background: linear-gradient(to bottom right, tan, white, white, tan, white) no-repeat center center fixed; 
+  background-size: cover;
+}	/* page background styles */
+
+.logo {
+	transition: width .5s ease-out;
+}	/* page logo transition style */
+.logo:hover {
+	width: 135px;
+}	/* page logo hover style */
+
+.mainText {
+	text-align: center;
+}	/* font alignment style */
+

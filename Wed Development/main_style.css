@@ -1,0 +1,83 @@
+/*  CSS file  */
+/* Title  Final Project Main Style Sheet
+  @author: Gabriel Weigand
+  creation date: 10/29/18
+  modified date: 12/17/18
+	*/
+
+html { 
+  background: linear-gradient(to bottom right, tan, white, white, tan, white) no-repeat center center fixed; 
+  background-size: cover;
+}	/* page background image styles */
+
+
+		/* main page content styles */
+#mainContainer{
+	display: flex;
+	flex-flow: row nowrap;
+    padding-bottom: 100px;
+	margin-left: 5%;
+	margin-right: 5%;
+	border-bottom: 2px solid black;
+	justify-content: space-around;
+}	/* flexbox container for main content */
+.col{
+	width: 30%;
+	display: flex;
+	flex-flow: column nowrap;
+	align-content: center;
+}	/* flexbox containers for columns */
+.col p {
+	padding-bottom: 10px;
+}	/* column spacing style */
+h2{
+	text-align: center;
+	margin-bottom: 2%;
+}	/* title font styles */
+
+
+		/* page link styles */
+.imgLink {
+	display: block;
+	max-height: 400px;
+	max-width: 94%;
+	margin-left: auto;
+	margin-right: auto;
+	transition: transform .5s ease-out;
+}	/* imgage link spacing & transition styles */
+.imgLink:hover{
+	transform: scale(1.03);
+}	/* imgage link transition style */
+#mario a:hover{
+	color: red;
+}	/* mario link color style */
+#forza a:hover{
+	color: orange;
+}	/* forza link color style */
+#gow a:hover{
+	color: lightgrey;
+}	/* gow link color style */
+
+
+		/* footer navigation link styles */
+#footerNav {
+	display: flex;
+	flex-flow: row nowrap;
+    padding-bottom: 30px;
+	justify-content: space-around;
+	list-style-type: none;
+}	/* flexbox container for navigation links */
+a {
+	color: black;
+	text-decoration: underline;
+}	/* common link styles */
+#footerNav a:nth-child(1):hover {
+	color: blue;
+}	/* common link color style */
+#footerNav a:nth-child(2):hover {
+	color: purple;
+}	/* common link color style */
+#footerNav a:nth-child(3):hover {
+	color: green;
+}	/* common link color style */
+

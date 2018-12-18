@@ -1,0 +1,29 @@
+/*  CSS file  */
+/* Title  Final Project Super Mario Odyssey Style Sheet
+  @author: Gabriel Weigand
+  creation date: 11/19/18
+  modified date: 12/17/18
+	*/
+
+html {
+	background: url("../images/mario/mario_background.jpg") no-repeat center center fixed;
+	background-size: cover;
+}	/* page background image styles */
+
+.logo {
+	transition: width .5s ease-out;
+}	/* page logo transition style */
+.logo:hover {
+	width: 135px;
+}	/* page logo hover style */
+
+h1 {
+	color: darkred;
+}	/* font color style */
+
+#mainContent {
+	background-color: #b3c6ff;
+	border: 6px double red;
+	border-radius: 10%;
+}	/* main content flexbox container styles */
+

@@ -1,0 +1,28 @@
+/*  CSS file  */
+/* Title  Final Project God of War Style Sheet
+  @author: Gabriel Weigand
+  creation date: 11/19/18
+  modified date: 12/17/18
+	*/
+
+html {
+	background: url("../images/god_of_war/god_of_war_background.jpg") no-repeat center center fixed;
+	background-size: cover;
+}	/* page background image styles */
+
+.logo {
+	transition: width .5s ease-out;
+}	/* page logo transition style */
+.logo:hover {
+	width: 135px;
+}	/* page logo hover style */
+
+h1 {
+	color: darkgrey;
+}	/* font color style */
+
+#mainContent {
+	background-color: lightgrey;
+	border: 8px ridge grey;
+}	/* main content flexbox container styles */
+

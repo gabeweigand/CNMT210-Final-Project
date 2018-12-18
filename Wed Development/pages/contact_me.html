@@ -1,0 +1,90 @@
+<!-- HTML file -->
+<!--Title  Final Project Contact Me Page
+  @author: Gabriel Weigand
+  creation date: 11/19/18
+  modified date: 12/17/18
+  	-->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Gabe's Top 3 Games: Contact Me</title>	<!-- page title -->
+		<link rel="stylesheet" href="../common/shared_styles.css">
+		<link rel="stylesheet" href="../css/contact_me_styles.css">
+		<script src="../cgi-bin/contact_me_script.js"></script>
+		<script src="../common/shared_script.js"></script>
+	</head>		<!-- links for shared styles & script files & for unique styles & script files -->
+	
+	<body onload="setDate()" onmousemove="checkDate()">
+		<nav id="navContainer">		<!-- navagation slidebar -->
+			<a href="javascript:void(0)" id="closeButton" onclick="closeNav()">&times;</a>
+			<a href="../index.html" title="Go Home">Home</a>
+			<a href="../pages/mario.html" title="Go to Super Mario Odyssey page">Super Mario Odyssey</a>
+			<a href="../pages/forza.html" title="Go to Forza: Horizon 4 page">Forza: Horizon 4</a>
+			<a href="../pages/god_of_war.html" title="Go to God of War page">God of War</a>
+			<a href="../pages/about_me.html" title="Go to About Me page">About Me</a>
+		</nav>		<!-- navagation includes page links & close button -->
+		
+		<div id="pageContainer">	<!-- page container -->
+			<header id="header">
+				<a href="javascript:void(0)" onclick="navControl()" title="Site Navigation">
+					<img src="../images/nav_icon.png" alt="sorry image missing" id="navButton">
+				</a>	<!-- nav button -->
+				
+				<a href="../index.html" title="Go Home">
+					<img src="../images/logo.png" alt="sorry image missing" class="logo">
+				</a>	<!-- logo and home button -->
+				
+				<h1>Contact Me</h1>
+			</header>	<!-- header with navigation button, site logo, & page title -->
+			
+			<main id="mainContent">		<!-- main content container -->
+				<p id="msg">Thank you for visiting my site! If you have any questions for me feel free to enter your name and 
+				email. When I will receive your question I will respond as soon as possible.</p>	<!-- opening message -->
+				
+				<form id="contactForm" action="MAILTO:pj1weigand@gmail.com" method="post" target="_blank">
+					<fieldset class="fieldset">		<!-- user information fieldset -->
+						<legend>User Information</legend>
+						
+						<p>		<!-- name must be at least 4 charaters -->
+							<label for="name" class="label">Name:</label>
+							<input type="text" name="name" id="name" pattern=".{4,}" placeholder="John Doe" required>
+						</p>
+						
+						<p>		<!-- email address must have format: "characters@charaters.(at least 3 charaters)" -->
+							<label for="email" class="label">Email Address:</label>
+							<input type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{3,}$" placeholder="sample@email.com" required>
+						</p>
+					</fieldset>
+					
+					<fieldset class="fieldset">		<!-- date and question fieldset -->
+						<legend>Date and Question</legend>
+						
+						<p>		<!-- read only date field -->
+							<label class="label">Date:</label>
+							<input type="text" id="date" value="MM/DD/YYYY" readonly>
+						</p>
+						
+						<p>		<!-- textarea input must be 265 charaters or less -->
+							<label for="question" class="label">Question:</label>
+							<textarea name="question" id="question" cols="20" rows="4" maxLength="256"></textarea>
+						</p>
+						
+						<p id="button">		<!-- reset and submit buttons -->
+							<input type="reset" form="contactForm" value="Reset" onclick="setDate()">
+							<span></span>
+							<input type="submit" form="contactForm" value="Submit" onclick="submitForm()">
+						</p>
+					</fieldset>
+				</form>
+			</main>		<!-- end of main container -->
+		</div>
+		
+		<footer id="footer">	<!-- page footer -->
+			<p>2018 - Site Designed by: Gabe Weigand - Strickly for Academic Purposes</p>
+		</footer>
+	</body>
+</html>
+
